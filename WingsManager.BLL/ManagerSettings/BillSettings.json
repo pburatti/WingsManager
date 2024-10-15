@@ -1,0 +1,64 @@
+{
+  "Patterns": {
+    "CDC": "(CENTRO DI :|C.D.C     :|C.D.C.    :|CDC       :)[\\s]{0,3}(?<value>[A-Z\\w]{1,20}[\\s]{0,1}[A-Z\\w]{1,20}[\\s]{0,1}[A-Z\\w]{1,20}[\\s]{0,1}[A-Z\\w]{1,20}[\\s]{0,1})",
+    "DocumentNumber": "(?<year>[0-9]{2})-(?<cwtAgencyCode>[0-9]{3})-(?<documentNumber>[0-9]{7})",
+    "CustomerNumber": "(?<country>[A-Z]{2})-(?<unkhnow1>[A-Z0-9]{3})-(?<code>[0-9]{7})",
+    "DataIn": "Dep\\.date:[\\s]{0,5}(?<value>[0-9]{1,2}\\/[0-9]{1,2}\\/[0-9]{2,4})",
+    "HeaderPerformanceRow": "PRESTAZIONI\\s+IVA\\s+TOTALE|PRODUCT\\s+VAT\\s+AMOUNT",
+    "Bill_IT": "BOLLA",
+    "CreditNote_EN": "CREDIT NOTE",
+    "CreditNote_IT": "NOTA DI CREDITO",
+    "Invoice_IT": "FATTURA",
+    "Invoice_EN": "INVOICE",
+    "CreditBill_IT": "BOLLA A CREDITO",
+    "DebitNoteReport_IT": "NOTA DI DEBITO RIEPILOGATIVA",
+    "DebitNoteReport_EN": "DEBIT NOTE",
+    "InvoiceReport_IT": "FATTURA RIEPILOGATIVA",
+    "InvoiceReport_EN": "INVOICE REPORT",
+    "CreditNoteReport_IT": "NOTA DI CREDITO RIEPILOGATIVA",
+    "CreditNoteReport_EN": "INVOICE REPORT CREDIT",
+    "Proforma": "PROFORMA",
+    "ServiceBoxPassenger": "(PASSEGGERO:|TRAVELLER :|TRAVELER  :)(?<value>.+)"
+    /*"HotelServicePassenger": "(PASSEGGERO:|TRAVELLER :|TRAVELER  :)(?<value>.+)",
+    "HotelServiceName": "(HOTEL     :)(?<value>.+)",
+    "HotelServiceArrival": "(ARRIVO    :)(?<value>.+)",
+    "HotelServiceType": "(TIPO      :)(?<value>.+)",
+    "HotelServiceVoucher": "(VOUCHER   :)(?<value>.+)",
+    "HotelServiceRate": "(TARIFFA   :)(?<value>.+)"*/
+  },
+  "FoldersPath": {
+    /*
+    1 - PathConvertXML=\\10.200.10.88\d$\Inetpub\ftproot\EmeaFTP\Spool\
+    NO - PathAcquisizione=C:\Servizi\AcquisizioneBolleXML\tmp\
+    NO - PathConvertBolleXML=\\10.200.10.88\d$\Inetpub\ftproot\EmeaFTP\Spool\
+    2 - PathLette=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\Bolle\
+    3 - PathErrate=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\Bolle\Errate\
+    4 - PathAltriDocumenti=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\File Sconosciuti\
+    5 - PathAltriDocumentiProforma=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\Proforma\
+    6 - PathFatturaRiepilogativa=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\EC\
+    7 - PathNoteDiCredito=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\EC\
+    8 -PathScartati=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\Errati\
+    NO -PathAltriDocumentiInvoice=\\swrom1xb03047\Informatica\ITDevelopment\Storage\SpoolManager\Invoice\    
+
+		1 - "Original": "\\\\swrom1xb03023\\EmeaFTP\\Spool\\",
+		2 - "Processed": "\\\\vwedc2if00777\\italy\\backoffice\\WingsManager\\Bolle\\", 
+		3 - "Error": "\\\\vwedc2if00777\\italy\\backoffice\\WingsManager\\Bolle\\Errate\\",
+		6 - "InvoiceReport": "\\\\vwedc2if00777\\italy\\backoffice\\WingsManager\\ECtoWork\\",
+		7 - "CreditNote": "\\\\vwedc2if00777\\italy\\backoffice\\WingsManager\\ECtoWork\\",
+		4 - "OtherDocs": "\\\\vwedc2if00777\\italy\\backoffice\\WingsManager\\FileSconosciuti\\",
+		5 - "ProformaAndOtherDocs": "\\\\vwedc2if00777\\italy\\backoffice\\WingsManager\\Proforma\\",
+		8 - "Discarded": "\\\\vwedc2if00777\\italy\\backoffice\\WingsManager\\FileSconosciuti\\"
+
+
+    */
+    "Original": "C:\\BackofficeStorage\\EmeaFTP\\Spool\\",
+    "Processed": "C:\\BackofficeStorage\\SpoolManager\\Bolle\\", //Bill_IT,CreditBill_IT,CreditNote_EN,CreditNote_IT,Invoice_IT,Invoice_EN
+    "Error": "C:\\BackofficeStorage\\SpoolManager\\Bolle\\Error\\",
+    "InvoiceReport": "C:\\BackofficeStorage\\SpoolManager\\EC\\", //InvoiceReport_IT & InvoiceReport_EN
+    "CreditNote": "C:\\BackofficeStorage\\SpoolManager\\EC\\", //CreditNoteReport_IT & CreditNoteReport_EN &DebitNoteReport_EN & DebitNoteReport_IT
+    "OtherDocs": "C:\\BackofficeStorage\\SpoolManager\\File Sconosciuti\\",
+    "ProformaAndOtherDocs": "C:\\BackofficeStorage\\SpoolManager\\Proforma\\",
+    "Discarded": "C:\\BackofficeStorage\\SpoolManager\\Errati\\"
+
+  }
+}

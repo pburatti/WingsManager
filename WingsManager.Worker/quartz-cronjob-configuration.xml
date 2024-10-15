@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<job-scheduling-data xmlns="http://quartznet.sourceforge.net/JobSchedulingData" version="2.0">
+    <schedule>
+      <!-- ACCOUNT STATEMENT
+        <job>
+            <name>AccountStatementWingsJob</name>
+            <group>WingsServiceJobGroup</group>
+            <description>Job scheduler for import wings account statement data</description>
+            <job-type>WingsManager.Worker.Jobs.AccountStatementJob, WingsManager.Worker</job-type>
+        </job>
+        <trigger>
+            <cron>
+                <name>AccountStatementWingsTrigger</name>
+                <group>WingsServiceTriggerGroup</group>
+                <job-name>AccountStatementWingsJob</job-name>
+                <job-group>WingsServiceJobGroup</job-group>
+                <misfire-instruction>DoNothing</misfire-instruction>
+                <cron-expression>0/5 * 4-23 * * ?</cron-expression>
+            </cron>
+        </trigger> -->
+     <!--VOUCHER-->
+      <job>
+        <name>ImportVoucherWingsJob</name>
+        <group>WingsServiceJobGroup</group>
+        <description>Job scheduler for import wings voucher data</description>
+        <job-type>WingsManager.Worker.Jobs.VoucherJob, WingsManager.Worker</job-type>
+      </job>
+      <trigger>
+        <cron>
+          <name>ImportVoucherWingsTrigger</name>
+          <group>WingsServiceTriggerGroup</group>
+          <job-name>ImportVoucherWingsJob</job-name>
+          <job-group>WingsServiceJobGroup</job-group>
+          <misfire-instruction>DoNothing</misfire-instruction>
+          <cron-expression>0/2 * 4-23 * * ?</cron-expression>
+        </cron>
+      </trigger> 
+      <!-- BILL
+      <job>
+        <name>ImportBillWingsJob</name>
+        <group>WingsServiceJobGroup</group>
+        <description>Job scheduler for import wings bill data</description>
+        <job-type>WingsManager.Worker.Jobs.BillJob, WingsManager.Worker</job-type>
+      </job>
+      <trigger>
+        <cron>
+          <name>ImportBillWingsTrigger</name>
+          <group>WingsServiceTriggerGroup</group>
+          <job-name>ImportBillWingsJob</job-name>
+          <job-group>WingsServiceJobGroup</job-group>
+          <misfire-instruction>DoNothing</misfire-instruction>
+          <cron-expression>0/15 * 4-23 * * ?</cron-expression>
+        </cron>
+      </trigger> -->
+    </schedule>
+</job-scheduling-data>

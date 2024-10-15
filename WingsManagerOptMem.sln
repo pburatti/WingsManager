@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WingsManager.Worker", "WingsManager.Worker\WingsManager.Worker.csproj", "{5E2AD32E-54CC-47DD-AA14-DC6A2733A4D4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WingsManager.Model", "WingsManager.Model\WingsManager.Model.csproj", "{AF6D128F-6D6F-4AB7-B879-8718848833C2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WingsManager.BLL", "WingsManager.BLL\WingsManager.BLL.csproj", "{8F09F1A5-5597-48C1-B0EB-2F6A777F72D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WingsManager.DAL", "WingsManager.DAL\WingsManager.DAL.csproj", "{76BDDA44-B4E5-4788-AADE-6C6C8F3C6DF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebInvoiceDatabase", "WebInvoiceDatabase\WebInvoiceDatabase.csproj", "{C56EF995-B9D3-41D8-B3E7-7CE795CE90E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilityTools", "UtilityTools\UtilityTools.csproj", "{C8944861-08A4-4969-A964-C055D04DFDF3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WingsManager.ExternalService", "WingsManager.ExternalService\WingsManager.ExternalService.csproj", "{DC9AAD55-FEFE-4AD1-A783-56296D365F87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E2AD32E-54CC-47DD-AA14-DC6A2733A4D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2AD32E-54CC-47DD-AA14-DC6A2733A4D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2AD32E-54CC-47DD-AA14-DC6A2733A4D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2AD32E-54CC-47DD-AA14-DC6A2733A4D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF6D128F-6D6F-4AB7-B879-8718848833C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF6D128F-6D6F-4AB7-B879-8718848833C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF6D128F-6D6F-4AB7-B879-8718848833C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF6D128F-6D6F-4AB7-B879-8718848833C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F09F1A5-5597-48C1-B0EB-2F6A777F72D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F09F1A5-5597-48C1-B0EB-2F6A777F72D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F09F1A5-5597-48C1-B0EB-2F6A777F72D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F09F1A5-5597-48C1-B0EB-2F6A777F72D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76BDDA44-B4E5-4788-AADE-6C6C8F3C6DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76BDDA44-B4E5-4788-AADE-6C6C8F3C6DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76BDDA44-B4E5-4788-AADE-6C6C8F3C6DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76BDDA44-B4E5-4788-AADE-6C6C8F3C6DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C56EF995-B9D3-41D8-B3E7-7CE795CE90E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C56EF995-B9D3-41D8-B3E7-7CE795CE90E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C56EF995-B9D3-41D8-B3E7-7CE795CE90E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C56EF995-B9D3-41D8-B3E7-7CE795CE90E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8944861-08A4-4969-A964-C055D04DFDF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8944861-08A4-4969-A964-C055D04DFDF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8944861-08A4-4969-A964-C055D04DFDF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8944861-08A4-4969-A964-C055D04DFDF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC9AAD55-FEFE-4AD1-A783-56296D365F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC9AAD55-FEFE-4AD1-A783-56296D365F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC9AAD55-FEFE-4AD1-A783-56296D365F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC9AAD55-FEFE-4AD1-A783-56296D365F87}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D578494C-9C30-4BCB-B57B-3D15B0970278}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://swrom1xb03035:8080/tfs/cwt-tfs
+		SccProjectUniqueName0 = UtilityTools\\UtilityTools.csproj
+		SccProjectName0 = UtilityTools
+		SccLocalPath0 = UtilityTools
+		SccProjectUniqueName1 = WebInvoiceDatabase\\WebInvoiceDatabase.csproj
+		SccProjectName1 = WebInvoiceDatabase
+		SccLocalPath1 = WebInvoiceDatabase
+		SccProjectUniqueName2 = WingsManager.BLL\\WingsManager.BLL.csproj
+		SccProjectName2 = WingsManager.BLL
+		SccLocalPath2 = WingsManager.BLL
+		SccProjectUniqueName3 = WingsManager.DAL\\WingsManager.DAL.csproj
+		SccProjectName3 = WingsManager.DAL
+		SccLocalPath3 = WingsManager.DAL
+		SccProjectUniqueName4 = WingsManager.Model\\WingsManager.Model.csproj
+		SccProjectName4 = WingsManager.Model
+		SccLocalPath4 = WingsManager.Model
+		SccProjectUniqueName5 = WingsManager.Worker\\WingsManager.Worker.csproj
+		SccProjectName5 = WingsManager.Worker
+		SccLocalPath5 = WingsManager.Worker
+		SccProjectUniqueName6 = WingsManager.ExternalService\\WingsManager.ExternalService.csproj
+		SccProjectName6 = WingsManager.ExternalService
+		SccLocalPath6 = WingsManager.ExternalService
+		SccLocalPath7 = .
+	EndGlobalSection
+EndGlobal
